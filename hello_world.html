@@ -1,22 +1,31 @@
 <html>
   <head>
-    <link rel="stylesheet" href="pyscript.css" />
+    <link rel="stylesheet" href="pyscript.css"/>
     <script defer src="pyscript.js"></script>
   </head>
-  <body>
-  <py-script>
-    print("Hola, Anonimo! \nEstoy usando Python en la web gracias a Pyscript :)")
+  <title>Pyhton en HTML</title>
+  <body style="background-color:black; color : white;">
 
-    print("\nVeamos un ejemplo de Python... \nSumamos numeros ?...")
+<dialog>
+  Introduce un numero : 
+</dialog>  
 
-    numero = int(input("\nDime un numero y te dire la suma de todos ellos hasta ese"))
+    <py-script>
 
-    for n in range (1,numero) :
-      suma += n
+import time
+from random import randint
 
-    print("\nTu numero era el %d y la suma de todos los numero hasta el es %d" % (numero, suma))
-    print("\nR.I.P JavaScript")
-    
+print("Hola, Anonimo! \nEstoy usando Python en la web gracias a Pyscript :)")
+print("\n\nVeamos un ejemplo de Python... \nGeneramos numeros random ?...")
+
+print("Cada vez que recargues la página tendrás un numero diferente : \n")
+
+for n in range (10) :
+  numero = randint(1,10)
+
+print ("Tu numero es el %d " % numero)
+
+
     </py-script>
-    </body>
+  </body>
 </html>
